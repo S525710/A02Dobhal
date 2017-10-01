@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="carRental.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="vsual.css" />
+
+<head>
+    <title>Car Rental - Rent</title>
+</head>
+
+<body class="bodyCar">
+    <ul>
+        <li><a class=" " href="index.html">About</a> </li>
+        <li><a href="yourChoice.html">Car Rental</a> </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- <form id="rentalDetails" onsubmit="return false"> -->
+        <!-- <div style="text-align:center">
+            <p class="center"><b> Exotic Car Rental </b>
+                <br><br> First name:
+                <input type="text" id="fName" name="firstname">
+                <br> <br> Last name:
+                <input type="text" id="lName" name="lastname">
+                <br> <br> Select Car:
+                <select id="car" class="car">
+                  <option value = ""></option>
+                  <option value = "AudiR8">Audi R8</option>
+                  <option value = "LamborghiniAventador">Lamborghini Aventador</option>
+                  <option value = "LamborghiniHuracan">Lamborghini Huracan</option>
+                  <option value = "Porsche911">Porsche 911</option>
+                  <option value = "HondaNSX">Honda NSX</option>
+                  <option value = "Ferrari">Ferrari</option>
+                  <option value = "McLarenP1">McLaren P1</option>
+                  <option value = "Porsche918">Porsche 918</option>
+                </select>
+                <br> <br> Number of days:
+                <input type="text" id="days" name="days">
+                <br><br>
+                <input type="submit" onclick="calculateCost()" value="Calculate Cost">
+                <input type="button" onclick="resetFunction()" value="Reset Details">
+            </p>
+            <p id="output"></p>
+        </div> -->
+
+        <br><br>
+
+        <div class="container">
+            <form class="well form-horizontal" id="rentalDetails" onsubmit="return false">
+              <legend style="text-align:center;">Exotic Car Rental</legend>
+        <div class="form-group">
+          <label class="col-md-4 control-label">First Name</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="firstname" id="fName" placeholder="First Name" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" >Last Name</label>
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input name="lastname" id="lName" placeholder="Last Name" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Cars</label>
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-bed"></i></span>
+                <select id="car" class="car form-control selectpicker">
+                  <option value = "">Please select your car</option>
+                  <option value = "AudiR8">Audi R8</option>
+                  <option value = "LamborghiniAventador">Lamborghini Aventador</option>
+                  <option value = "LamborghiniHuracan">Lamborghini Huracan</option>
+                  <option value = "Porsche911">Porsche 911</option>
+                  <option value = "HondaNSX">Honda NSX</option>
+                  <option value = "Ferrari">Ferrari</option>
+                  <option value = "McLarenP1">McLaren P1</option>
+                  <option value = "Porsche918">Porsche 918</option>
+                </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Number of Days</label>
+            <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+          <input name="days" id="days" placeholder="0" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-2">
+            <button type="submit" onclick="calculateCost()" class="btn btn-warning"> Calculate Cost <span class="glyphicon glyphicon-credit-card"></span></button>
+          </div>
+          <div class="col-md-2">
+            <button type="button" onclick="resetFunction()" class="btn btn-warning"> Reset Details <span class="glyphicon glyphicon-trash"></span></button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-8 control-label" id="output"></label>
+        </div>
+
+        </form>
+        </div>
+    <!-- </form> -->
+</body>
+</html>
