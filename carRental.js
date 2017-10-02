@@ -9,15 +9,8 @@ function selectedCar() {
 
 function calculateCost() {
     $(document).ready(function() {
-        var firstName = document.getElementById("fName").value; {
+        var firstName = document.getElementById("fName").value; 
             var lastName = document.getElementById("lName").value;
-            if (typeof firstName !== 'String') {
-                window.alert("First Name should be a string");
-            }
-            if (typeof lastName !== 'String') {
-                window.alert("Last Name should be a string");
-            }
-        }
         var selectedCar = document.getElementById("car").value;
         var daysRequired = document.getElementById("days").value;
         var costPerDay = 0;
